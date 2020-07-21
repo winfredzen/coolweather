@@ -10,10 +10,21 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+//    signingConfigs {
+//        config {
+//            storeFile file('/Users/wangzhen/Documents/AndroidStudio/test.keystore')
+//            storePassword '123456'
+//            keyAlias 'testalias'
+//            keyPassword '123456'
+//        }
+//    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.config
         }
     }
 }
